@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+html {
+  font-size: calc(100vmax / 1500 * 100);
+}
+body {
+  height: 100vh;
+  background-color: #e2aa01;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.title {
+  font-family: 'Pacifico', cursive;
+  font-size: clamp(36px, 0.6rem, 100px);
+  color: #fff;
+  text-shadow: 6px 4px #735b13;
+}
+[class^='firework-'] {
+  position: absolute;
+  width: 0.1rem;
+  height: 0.1rem;
+  border-radius: 50%;
+}
+.firework-1 {
+  animation: firework-sm 1.2s both infinite;
+  animation-delay: 0.2s;
+  top: 20%;
+  left: 60%;
+}
+.firework-2 {
+  animation: firework-lg 1.2s both infinite;
+  animation-delay: 0.1s;
+  top: 45%;
+  left: 70%;
+}
+.firework-3 {
+  animation: firework-md 1.2s both infinite;
+  animation-delay: 0.2s;
+  top: 80%;
+  left: 15%;
+}
+.firework-4 {
+  animation: firework-sm 1.2s both infinite;
+  animation-delay: 0.6s;
+  top: 80%;
+  left: 55%;
+}
+.firework-5 {
+  animation: firework-lg 1.2s both infinite;
+  animation-delay: 0.9s;
+  top: 30%;
+  left: 40%;
+}
+.firework-6 {
+  animation: firework-sm 1.2s both infinite;
+  animation-delay: 0.1s;
+  top: 45%;
+  left: 60%;
+}
+.firework-7 {
+  animation: firework-lg 1.2s both infinite;
+  animation-delay: 1.5s;
+  top: 30%;
+  left: 90%;
+}
+.firework-8 {
+  animation: firework-sm 1.2s both infinite;
+  animation-delay: 0.2s;
+  top: 25%;
+  left: 40%;
+}
+.firework-9 {
+  animation: firework-lg 1.2s both infinite;
+  animation-delay: 1.4s;
+  top: 50%;
+  left: 25%;
+}
+.firework-10 {
+  animation: firework-md 1.2s both infinite;
+  animation-delay: 0.1s;
+  top: 20%;
+  left: 60%;
+}
+.firework-11 {
+  animation: firework-sm 1.2s both infinite;
+  animation-delay: 0.7s;
+  top: 55%;
+  left: 15%;
+}
+.firework-12 {
+  animation: firework-lg 1.2s both infinite;
+  animation-delay: 0.3s;
+  top: 60%;
+  left: 75%;
+}
+.firework-13 {
+  animation: firework-lg 1.2s both infinite;
+  animation-delay: 0.7s;
+  top: 70%;
+  left: 80%;
+}
+.firework-14 {
+  animation: firework-sm 1.2s both infinite;
+  animation-delay: 0.9s;
+  top: 75%;
+  left: 50%;
+}
+.firework-15 {
+  animation: firework-md 1.2s both infinite;
+  animation-delay: 0.3s;
+  top: 70%;
+  left: 90%;
+}
+@keyframes firework-sm {
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 70% {
+    opacity: 1;
+  }
+  100% {
+    box-shadow: -0.5rem 0rem 0 #fff, 0.5rem 0rem 0 #fff, 0rem -0.5rem 0 #fff, 0rem 0.5rem 0 #fff, 0.35rem -0.35rem 0 #fff, 0.35rem 0.35rem 0 #fff, -0.35rem -0.35rem 0 #fff, -0.35rem 0.35rem 0 #fff;
+  }
+}
+@keyframes firework-md {
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 70% {
+    opacity: 1;
+  }
+  100% {
+    box-shadow: -0.7rem 0rem 0 #fff, 0.7rem 0rem 0 #fff, 0rem -0.7rem 0 #fff, 0rem 0.7rem 0 #fff, 0.49rem -0.49rem 0 #fff, 0.49rem 0.49rem 0 #fff, -0.49rem -0.49rem 0 #fff, -0.49rem 0.49rem 0 #fff;
+  }
+}
+@keyframes firework-lg {
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 70% {
+    opacity: 1;
+  }
+  100% {
+    box-shadow: -0.9rem 0rem 0 #fff, 0.9rem 0rem 0 #fff, 0rem -0.9rem 0 #fff, 0rem 0.9rem 0 #fff, 0.63rem -0.63rem 0 #fff, 0.63rem 0.63rem 0 #fff, -0.63rem -0.63rem 0 #fff, -0.63rem 0.63rem 0 #fff;
+  }
+}
+
+
+#fireworks-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    flex-direction: column; 
+    background: rgba(255,0,0,0.1); 
+}
+
+.title {
+    font-family: 'Pacifico', cursive;
+    font-size: clamp(30px, 2rem, 60px);
+    color: #fff;
+    text-shadow: 6px 4px #735b13;
+    margin-top: 20px;
+}
